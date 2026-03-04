@@ -9,10 +9,14 @@ st.title("Customer Churn Prediction")
 tenure = st.slider("Tenure (months)",0,72)
 monthly = st.slider("Monthly Charges",0,150)
 
-input_data = pd.DataFrame(
-    [[tenure, monthly]],
-    columns=["tenure","MonthlyCharges"]
-)
+# create dataframe with all required features
+input_data = pd.DataFrame(columns=model.feature_names_in_)
+
+input_data.loc[0] = 0
+
+# fill only the fields we use
+input_data["tenure"] = tenure
+input_data["MonthlyCharges"] = monthly
 
 if st.button("Predict"):
 
