@@ -13,6 +13,12 @@ Streamlit App:
 
 ---
 
+# 📷 Application Screenshot
+
+![Customer Churn App](app_screenshot.png)
+
+---
+
 # 📌 Project Overview
 
 Customer churn prediction is an important business problem for telecom companies. Losing customers directly impacts revenue, so companies use **machine learning models** to predict which customers are likely to churn.
