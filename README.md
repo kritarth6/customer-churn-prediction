@@ -9,7 +9,7 @@ The goal is to identify customers who are likely to leave the service so that bu
 # 🚀 Live Demo
 
 Streamlit App:
-(https://customer-churn-prediction-wxeymr5qvgpjkuaxl2brpc.streamlit.app/)
+[https://your-streamlit-link.streamlit.app](https://customer-churn-prediction-wxeymr5qvgpjkuaxl2brpc.streamlit.app/)
 
 ---
 
