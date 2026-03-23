@@ -6,7 +6,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Load model
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("churn_model.pkl", "rb"))
 
 st.set_page_config(page_title="Churn Prediction Dashboard", layout="wide")
 
