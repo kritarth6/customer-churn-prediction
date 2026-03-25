@@ -74,11 +74,21 @@ if st.button("🔍 Predict Churn"):
 st.subheader("📊 Feature Importance")
 
 if hasattr(model, "feature_importances_"):
-    importance = model.feature_importances_
-    features = input_df.columns
 
-    fig2 = px.bar(x=features, y=importance, title="Feature Importance")
+    importance = model.feature_importances_
+
+    # FIX: generate generic feature names
+    features = [f"Feature {i}" for i in range(len(importance))]
+
+    fig2 = px.bar(
+        x=importance,
+        y=features,
+        orientation='h',
+        title="Feature Importance"
+    )
+
     st.plotly_chart(fig2, use_container_width=True)
+
 else:
     st.info("Model does not support feature importance")
 
